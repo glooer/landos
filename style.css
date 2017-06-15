@@ -1,0 +1,379 @@
+
+.img-fluid-height {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: inherit;
+	border-bottom: 1px solid #2e4756;
+}
+
+a:hover,
+a:active {
+	color: #2e4756;
+  text-decoration: none;
+}
+
+.background-slogan-h1 a {
+	color: inherit;
+	border-bottom: 1px solid yellow;
+}
+
+.background-slogan-h1 a:hover,
+.background-slogan-h1 a:active {
+	color: yellow;
+  text-decoration: none;
+}
+
+
+.header-menu__container {
+	text-align: center;
+}
+
+.background-slogan-h1 {
+	background: #2e4756;
+	color: white;
+}
+
+.background-slogan-h2 {
+	background: #00c2f2;
+	color: white;
+}
+
+.header-slogan-h1__container {
+	text-align: center;
+	font-size: 2rem;
+	text-transform: uppercase;
+	padding: 1rem 0;
+}
+
+.header-slogan-h2__container {
+	text-align: center;
+	font-size: 1.5rem;
+	padding: .5rem 0;
+}
+
+.block {
+	padding: 1.5rem 0;
+}
+
+.portfolio-sections__container {
+	text-align: center;
+	color: #2e4756;
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+
+.about-logo__container {
+	text-align: center;
+}
+
+.what-you-get__container {
+	text-align: center;
+}
+
+.what-you-get-item__container {
+	display: inline-block;
+	margin: auto;
+	padding: 1rem;
+	border: 1px solid #2196F3;
+	background: #fafafa;
+}
+
+.humans__container {
+	text-align: center;
+}
+
+.human-item__container {
+	display: inline-block;
+	text-align: center;
+}
+
+.human-item-image__container {
+	position: relative;
+	overflow: hidden;
+}
+
+.human-item-name__container {
+	margin: .5rem 0;
+  font-size: 2rem;
+}
+
+.human-item-work__container {
+	margin: .5rem 0;
+  font-size: 1.5rem;
+}
+
+.human-item-email__container {
+	margin: .5rem 0;
+}
+
+.humans-ship__container {
+	text-align: center;
+}
+
+.humans-ship-item__container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.humans-ship__container {
+	opacity: 0.3;
+}
+
+.price-tab__container {
+	text-align: center;
+}
+
+.price-tab-item__container {
+	display: inline-block;
+}
+
+/*.human-item-image__background {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}*/
+
+.human-item-image__container {
+	border-radius: 50%;
+	position: relative;
+	width: 200px;
+	height: 200px;
+  margin: auto;
+}
+
+.human-item-image__container::before {
+	background-image: url(assets/images/human-around-window-of-ship.png);
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	content: "";
+	z-index: 999;
+	background-size: 100%;
+}
+
+
+.price-tab-item-image__container {
+	height: 150px;
+	padding: 1rem 0;
+}
+
+.price-tab-item-title__container {
+	font-size: 2rem;
+}
+
+.background-require-form {
+	height: 100vh;
+	background-image: url(assets/images/form-background.png);
+	background-position: center;
+	background-size: cover;
+}
+
+.require-form__container {
+	padding-top: 10vh;
+}
+
+.require-form__from {
+	max-width: 420px;
+	background: white;
+	margin: auto;
+	padding: 1rem;
+	text-align: center;
+}
+
+.header-menu__container {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+}
+
+.header-menu__container .list-inline-item:not(:last-child) {
+	margin-right: 1rem;
+	position: relative;
+}
+
+.header-menu__container .list-inline-item:not(:last-child)::before {
+	content: '|';
+	position: absolute;
+	right: -0.8rem;
+	top: -2px;
+}
+
+
+/*
+	wather
+*/
+
+
+@keyframes ship_stay {
+				0% {
+			    transform: translate(0px,0px) rotate(0);
+			  }
+				33% {
+					transform: translate(-1px, +2px) rotate(2deg)
+				}
+				66% {
+					transform: translate(-1px, +2px) rotate(-3deg)
+				}
+			  100% {
+			    transform: translate(0px,0px) rotate(0);
+			  }
+			}
+
+			@keyframes cloud-left {
+			  0% {
+			    transform:  translate(0px,0px)  ;
+			  }
+				10% {
+					transform: translate(-200px, 10px);
+				}
+				20% {
+					transform: translate(-400px, -10px);
+				}
+				30% {
+					transform: translate(-600px, -5px);
+				}
+				40% {
+					transform: translate(-800px, 10px);
+				}
+				50% {
+					transform: translate(-1000px, 10px);
+				}
+				60% {
+					transform: translate(-1200px, -10px);
+				}
+				70% {
+					transform: translate(-1400px, 10px);
+				}
+				80% {
+					transform: translate(-1600px, 10px);
+				}
+				80% {
+					transform: translate(-1800px, 10px);
+				}
+			  100% {
+			    transform:  translate(-2000px,0px)  ;
+			  }
+			}
+
+			@keyframes cloud-right {
+				0% {
+					transform: translate(0, 0);
+				}
+				100% {
+					transform: translate(2000px, 0);
+				}
+			}
+
+			@keyframes shake {
+				0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+				10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+				20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+				30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+				40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+				50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+				60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+				70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+				80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+				90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+				100% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+			}
+
+			@keyframes shake1 {
+				0% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+				10% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+				20% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+				30% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+				40% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+				50% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+				60% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+				70% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+				80% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+				90% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+				100% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+			}
+
+			.water {
+				position: relative;
+				width: 1600px;
+				height: 1051px;
+				overflow: hidden;
+				margin: auto;
+			}
+
+			.water * {
+				transition: all .5s;
+			}
+
+			.water__background,
+			.water__background2,
+			.water__background3,
+			.water__cloud,
+			.water__cloud2,
+			.water__cloud3 {
+				position: absolute;
+			}
+
+			.water__cloud {
+				top: 130.5px;
+				left: 170px;
+				/*animation: shake cubic-bezier(1, 1, 0, 0) 12s;*/
+			}
+
+			.water__cloud {
+		    top: 357.5px;
+				left: 170px;
+				animation: cloud-right cubic-bezier(1, 1, 0, 0) 500s;
+			}
+
+			.water__cloud2 {
+				top: 130.5px;
+		    right: 10%;
+				animation: cloud-left cubic-bezier(1, 1, 0, 0) 500s;
+				animation-iteration-count: infinite;
+			}
+
+			.water__cloud3 {
+				top: 22%;
+				right: 36%;
+				/*animation: cloud cubic-bezier(1, 1, 0, 0) 120s;*/
+				animation-iteration-count: infinite;
+			}
+
+
+
+			.water__background2,
+			.water__background3 {
+				animation: shake cubic-bezier(1, 1, 0, 0) 60s;
+				animation-iteration-count: infinite;
+				/*opacity: .7*/
+			}
+
+			.water__background2 {
+        top: 670px;
+				z-index: 909;
+				left: -60px;
+			}
+
+			.water__background3 {
+				top: 670px;
+				left: -60px;
+				/*animation: shake1 cubic-bezier(1, 1, 0, 0) 6s;*/
+				animation-iteration-count: infinite;
+			}
+
+			.water__ship {
+				position: absolute;
+		    top: 277px;
+	   		left: calc(50% - 240px);
+				animation: ship_stay cubic-bezier(1, 1, 0, 0) 6s;
+				animation-iteration-count: infinite;
+				animation-fill-mode:forwards;
+				transform-origin: bottom center;
+			}
