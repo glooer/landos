@@ -65,10 +65,20 @@
 		</div>
 
 		<script type="text/javascript">
-			if (window.innerWidth > 1600) {
+			// if (window.innerWidth > 1600) {
 				var scale = window.innerWidth / 1600;
-				$('.water').css('transform', 'scale(' + scale + ')')
-			}
+				if (window.innerWidth > 1600) {
+					$('.water').css('transform', 'scale(' + scale + ')')
+
+				} else {
+					$('.water').css('transform', 'scale(' + scale + ') translate(' + [
+						((1600 - (1600 / scale)) / 2) + 'px',
+						((1051 - (1051 / scale)) / 2) + 'px'
+					].join(', ') + ')')
+					$('.water').parent('div').css('height', (1051 * scale) + 'px')
+				}
+
+			// }
 		</script>
 
 		<div class="background-slogan-h1">
